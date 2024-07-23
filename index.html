@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends Player Survey</title>
+    </head>
+<body>
+    <h1 id="title">League of Legends Player Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve the League of Legends experience!</p>
+
+    <form id="survey-form">
+
+        <h2>General Information</h2>
+        <div class="form-group">
+            <label for="name" id="name-label">Summoner Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Summoner Name" required>
+        </div>
+        <div class="form-group">
+            <label for="server">Server:</label>
+            <select id="server" name="server">
+                <option value="na">North America</option>
+                <option value="euw">Europe West</option>
+                <option value="eune">Europe Nordic & East</option>
+                </select>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label"> Email Address: </label>
+          <input type="email" id="email" name="email" placeholder="Please Enter Email Address" required>
+          </div>
+          <div class="form-group">
+            <label for="age" id="number-label"> Age </label>
+            <input type="number" id="number" min="10" max="120" name="age" placeholder="10">
+        <h2>Gameplay Preferences</h2>
+        <div class="form-group">
+            <label>What is your main role?</label>
+            <br>
+            <input type="radio" id="top-lane" name="main-role" value="top">
+            <label for="top-lane">Top Lane</label>
+            <br>
+            <input type="radio" id="jungle" name="main-role" value="jungle">
+            <label for="jungle">Jungle</label>
+            <br>
+            <input type="radio" id="mid-lane" name="main-role" value="mid">
+            <label for="mid-lane">Mid Lane</label>
+            <br>
+            <input type="radio" id="adc" name="main-role" value="adc">
+            <label for="adc">Attack Damage Carry</label>
+            <br>
+            <input type="radio" id="support" name="main-role" value="support">
+            <label for="support">Support</label>
+        </div>
+        <div class="form-group">
+          <label>What roles do you want to learn?</label>
+          <br>
+          <label for="checkbox1">Top Lane
+            <input type="checkbox" id="checkbox1" name="roles" value="role1">
+          </label>
+          <br>
+          <label for="checkbox2">Jungle <input type="checkbox" id="checkbox2" name="roles" value="role2">
+          </label>
+          <br>
+          <label for="checkbox3"> Mid Lane <input type="checkbox" id="checkbox3" name="roles" value="role3">
+          </label>
+          <br>
+          <label for "checkbox4"> AD Carry <input type="checkbox" id="checkbox4" name="roles" value="role4">
+          </label>
+          <br>
+          <label for="checkbox5"> Support <input type="checkbox" id="checkbox5" name="roles" value="role5">
+          </label>
+          <br>
+  
+
+
+        <div class="form-group">
+            <label for="favorite-champion">Who is your favorite champion?</label>
+            <input type="text" id="favorite-champion" name="favorite-champion" placeholder="Enter champion name">
+        </div>
+        <div class="form-group">
+            <label for="preferred-game-mode">What is your preferred game mode?</label>
+            <select id="dropdown" name="preferred-game-mode">
+                <option value="summoners-rift">Summoner's Rift</option>
+                <option value="aram">ARAM</option>
+                <option value="urf">URF</option>
+                </select>
+        </div>
+
+        <h2>Feedback</h2>
+        <p>What are your thoughts on the current state of the game?</p>
+        <div class="form-group">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Share your honest feedback"></textarea>
+        </div>
+
+        <button id="submit" type="submit">Submit Survey</button>
+
+    </form>
+
+    </body>
+</html>
